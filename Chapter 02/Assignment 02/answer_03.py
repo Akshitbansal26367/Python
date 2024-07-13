@@ -1,3 +1,4 @@
+# Program to demonstrate example of each data type
 a = 45
 print("Int is", a)
 b = 45.6
