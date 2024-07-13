@@ -1,0 +1,10 @@
+x1 = input("Enter number1 : ")
+x2 = input("Enter number2 : ")
+print("Type of x1 and x2 is", type(x1), " ", type(x2))
+print("String concatenation is", x1 + x2)
+
+print("\n")
+num1 = eval(input("Enter number1 : "))
+num2 = eval(input("Enter number2 : "))
+print("Type of num1 and num2 is", type(num1), " ", type(num2))
+print("Sum is", num1 + num2)
