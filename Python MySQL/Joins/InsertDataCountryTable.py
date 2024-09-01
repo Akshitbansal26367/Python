@@ -10,8 +10,8 @@ mysql = mq.connect(
 myCursor = mysql.cursor()
 
 try:
-    insertTableData = "INSERT INTO country(country_id, country_name) VALUES (%s, %s)"
-    t = [(1, "India"), (2, "Sri Lanka"), (3, "Australia")]
+    insertTableData = "INSERT INTO country(country_name) VALUES (%s)"
+    t = ["India", "Sri Lanka", "Australia"]
     myCursor.executemany(insertTableData, t)
     mysql.commit()
     print("Data inserted into the table")
