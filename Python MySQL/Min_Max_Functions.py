@@ -11,12 +11,16 @@ myCursor = mysql.cursor()
 
 try:
     print("Maximum Order amount in the table is", end=" ")
-    selectQ = "Select max(order_amount) from orders"
-    myCursor.execute(selectQ)
-    sData = myCursor.fetchall()
+    selectMax = "Select max(order_amount) from orders"
+    myCursor.execute(selectMax)
+    sMax = myCursor.fetchone()
+    print((sMax[0]))
 
-    for s in sData:
-        print(s[0])
+    print("Minimum Order amount in the table is", end=" ")
+    selectMin = "Select min(order_amount) from orders"
+    myCursor.execute(selectMin)
+    sMin = myCursor.fetchone()
+    print(sMin[0])
 
 except mq.MySQLError as e:
     print(f"MySQL error while printing data is {e}")
