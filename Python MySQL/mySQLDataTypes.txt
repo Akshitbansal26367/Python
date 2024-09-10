@@ -1,0 +1,22 @@
+INT(size) is a medium integer. Signed range is from -2147483648 to 2147483647. Unsigned range is from 0 to 4294967295
+
+BIGINT(size) is a large integer. Signed range is from -9223372036854775808 to 9223372036854775807. Unsigned range is from 0 to 18446744073709551615
+
+VARCHAR(size) is a variable length string (can contain letters, numbers, and special characters). The size
+parameter specifies the maximum column length in characters - can be from 0 to 65535
+
+TEXT(size) Holds a string with a maximum length of 65,535 bytes
+
+LONGTEXT Holds a string with a maximum length of 4,294,967,295 characters
+
+DATE in format of YYYY-MM-DD. The supported range is from '1000-01-01' to '9999-12-31'
+
+DATETIME(fsp) is a date and time combination. Format: YYYY-MM-DD hh:mm:ss. The supported range is from '1000-01-01 00:00:00' to '9999-12-31 23:59:59'. Adding DEFAULT and ON UPDATE in the column definition to get automatic initialization and updating to the current date and time
+
+TIMESTAMP(fsp) TIMESTAMP values are stored as the number of seconds since the Unix epoch ('1970-01-01 00:00:00' UTC). Format: YYYY-MM-DD hh:mm:ss. The supported range is from '1970-01-01 00:00:01' UTC to '2038-01-09 03:14:07' UTC. Automatic initialization and updating to the current date and time can be specified using DEFAULT CURRENT_TIMESTAMP and ON UPDATE CURRENT_TIMESTAMP in the column definition
+
+TINYINT(size) is a very small integer. Signed range is from -128 to 127. Unsigned range is from 0 to 255.
+
+TIME(fsp) Format: hh:mm:ss. The supported range is from '-838:59:59' to '838:59:59'
+
+YEAR A year in four-digit format. Values allowed in four-digit format: 1901 to 2155, and 0000.
